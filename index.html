@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius Assaignment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <!-- Header and navbar section -->
+    <header class="w-full md:w-[90%] lg:[90%] mx-auto mt-12">
+        <div class="navbar bg-sky-100 p-12 rounded-lg">
+            <div class="navbar-start">
+              <h2 class="text-2xl md:text-3xl lg:text-5xl text-slate-800 font-bold">Interactive <br> <span class="text-xl md:text-2xl lg:text-3xl text-slate-600 font-medium">Geometry Genius</span></h2>
+            </div>
+            <div class="navbar-end">
+                <button id="blog-btn" class="bg-sky-500 text-2xl font-medium text-white px-8 py-2 rounded-lg">Blog</button>
+            </div>
+          </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row mx-10  mt-12 mb-12 gap-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3  w-[70%] gap-4">
+                    <!-- Triangle Card -->
+                    <div id="triangle-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="triangle-name" class="card-title text-2xl text-slate-800 font-bold">Triangle</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = 0.5 &#215; b &#215; h</p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="inputFieldForB" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="b"> <p class="mx-2"> cm </p>
+                          <input id="inputFieldForH" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="h"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-triangle" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+                      <!-- Rectangle Card -->
+                    <div id="rectangle-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="rectangle-name" class="card-title text-2xl text-slate-800 font-bold">Rectangle</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = w &#215; l</p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="rectangle-w" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="w"> <p class="mx-2"> cm </p>
+                          <input id="rectangle-l" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="l"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-rectangle" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+                      <!-- Parallelogram Card -->
+                    <div id="parallelogram-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="parallelogram-name" class="card-title text-2xl text-slate-800 font-bold">Parallelogram</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = b &#215; h</p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="parallelogram-b" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="b"> <p class="mx-2"> cm </p>
+                          <input id="parallelogram-h" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="h"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-parallelogram" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+                      <!-- Rhombus Card -->
+                    <div id="rhombus-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="rhombus-name" class="card-title text-2xl text-slate-800 font-bold">Rhombus</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = 0.5 &#215; d<sub>1</sub> &#215; d<sub>2</sub></p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="rhombus-d1" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="d1"> <p class="mx-2"> cm </p>
+                          <input id="rhombus-d2" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="d2"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-rhombus" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+                      <!-- Pentagon Card -->
+                    <div id="pentagon-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="pentagon-name" class="card-title text-2xl text-slate-800 font-bold">Pentagon</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = 0.5 &#215; p &#215; b</p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="pentagon-p" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="p"> <p class="mx-2"> cm </p>
+                          <input id="pentagon-b" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="b"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-pentagon" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+                      <!-- Ellipse Card -->
+                    <div  id="ellipse-bg" class="card w-full bg-base-100 border-2">
+                        <figure class="px-10 pt-10">
+                          <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 id="ellipse-name" class="card-title text-2xl text-slate-800 font-bold">Ellipse</h2>
+                          <p class="text-slate-700 font-medium mt">Area (A) = &#960;ab</p>
+                          <div class="flex mb-12 mt-4">
+                            <input id="ellipse-a" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="a"> <p class="mx-2"> cm </p>
+                          <input id="ellipse-b" class="bg-gray-300 py-1 w-20 text-black pl-3 rounded" type="text" placeholder="b"> <p class="mx-2"> cm </p>
+                          </div>
+                            <button id="btn-ellipse" class="bg-sky-500 text-2xl font-medium text-white px-20 py-2 rounded-lg">Calculate</button>
+                        </div>
+                      </div>
+            </div>
+            <div class="table-datails w-full h-96 overflow-scroll md:w-[30%] lg:[30%] text-center border-2 rounded-lg">
+              <h2 class="font-bold text-2xl underline mt-6">Area Calculation</h2>
+              <div class="overflow-x-auto mt-4">
+                <table class="table w-full">
+                  <tbody id="table-container">
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </section>
+    </main>
+    <!-- Connect js file  -->
+    <script src="/js/calculate-shape.js"></script>
+</body>
+</html>

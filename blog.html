@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <header>
+        <h1 class="font-bold text-sky-800 text-5xl mt-12 text-center">Let's read something important</h1>
+     </header>
+     <main>
+        <section class="w-3/4 mx-auto mt-12">
+            <div class="mb-8">
+                <h2 class="font-bold text-4xl text-sky-600 mb-2">Question Number 1</h2>
+            <h3 class="font-medium text-3xl text-slate-600 mb-4">What is DOM and what is the purpose of DOM?</h3>
+            <p class="text-2xl text-slate-700 "><span class="font-medium text-2xl">Answer:</span> The document object model called DOM. It is a programming interface for web documents. It represents the page so that we can style the document structure, styled tag, content, and etc. Programming languages can interact with the page using DOM as nodes and objects. All of the properties, methods, and events available for styling, changing, manipulating and creating web pages are organized and stylish into objects. We can easily get access to style, change, manipulate etc to change something awesome. That's why DOM is invented.</p>
+            </div>
+            <div class="mb-8">
+                <h2 class="font-bold text-4xl text-sky-600 mb-2">Question Number 2</h2>
+            <h3 class="font-medium text-3xl text-slate-600 mb-4">How will you select HTML elements using DOM? Name the DOM methods.</h3>
+            <p class="text-2xl text-slate-700"><span class="font-medium text-2xl">Answer:</span> There are few ways to Connect DOM into HTML tag or objects. DOM selects HTML elements within a document using JavaScript below the ways:
+            <ol class="text-2xl text-slate-700 mt-4">
+                <li class="mb-4">1. getElementsByTagName() <p>In this way you can add html tag and it will select html tag directly.</p></li>
+                <li class="mb-4">2. getElementsByClassName()<p>In this way you can add by class name and it will select that tag which is mentioned by the class name. It's very useful.</p></li>
+                <li class="mb-4">3. getElementById()<p>In this way you can add by Id name and it will select that tag which is mentioned by the Id name. It's also very useful and important.</p></li>
+                <li class="mb-4">4. querySelector()<p>In this way you can add by specific css selector and it will select that tag which is select first element that matches the specified CSS selector in the document.</p></li>
+                <li class="mb-4">5. querySelectorAll()<p>In this way you can add by specific css selector and it will select that tag which is select all element that matches the specified CSS selector in the document.</p></li></li>
+            </ol></p>
+            </div>
+            <div class="mb-8">
+                <h2 class="font-bold text-4xl text-sky-600 mb-2">Question Number 3</h2>
+            <h3 class="font-medium text-3xl text-slate-600 mb-4">What is event bubble?</h3>
+            <p class="text-2xl text-slate-700 "><span class="font-medium text-2xl">Answer:</span> Actually, Event bubble is the part of DOM. It's relate to DOM concept. It' working when an element receives an event, and that event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element. We can understand it using ParentNode or ChildNode. It's looks like a tree which is bubble parent to child. When you click the button, you can think of it like you're also clicking the child of that tag. This is because the button is a child of the that tag.</p>
+            </div>
+            <div class="mb-8">
+                <h2 class="font-bold text-4xl text-sky-600 mb-2">Question Number 4</h2>
+            <h3 class="font-medium text-3xl text-slate-600 mb-4">What is a callback function and why will you use it?</h3>
+            <p class="text-2xl text-slate-700 "><span class="font-medium text-2xl">Answer:</span> The function which executed after another function has finished execution. This function passed as an argument to another function. That's why it's called a callback function. <br> Callback function needed sometime. Mostly, when many JavaScript actions are asynchronous. This function make sure us that is not going to run before a code running is completed but will run right after the code executed. A callback function purpose is to execute code in response to an event while the rest of the code runs.</p>
+            </div>
+        </section>
+     </main>
+</body>
+</html>

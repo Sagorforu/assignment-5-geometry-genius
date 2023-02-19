@@ -1,0 +1,12 @@
+.side-btn{
+    background-color: #086dc0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
